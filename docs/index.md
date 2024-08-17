@@ -4,7 +4,7 @@ title: Home
 heroImage: https://vuejs.press/images/hero.png
 actions:
   - text: 算法竞赛 启动
-    link: /getting-started.html
+    link: /get-started.html
     type: primary
 
   - text: OJ练习
