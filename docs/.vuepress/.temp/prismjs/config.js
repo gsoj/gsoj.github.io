@@ -1,0 +1,3 @@
+import "C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/node_modules/@vuepress/theme-default/node_modules/@vuepress/plugin-prismjs/node_modules/@vuepress/highlighter-helper/lib/client/styles/base.css"
+import "C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/node_modules/@vuepress/theme-default/node_modules/@vuepress/plugin-prismjs/lib/client/styles/nord.css"
+import "C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/node_modules/@vuepress/theme-default/node_modules/@vuepress/plugin-prismjs/node_modules/@vuepress/highlighter-helper/lib/client/styles/line-numbers.css"
