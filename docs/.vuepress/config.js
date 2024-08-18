@@ -1,7 +1,9 @@
 import {defaultTheme} from '@vuepress/theme-default'
 import {defineUserConfig} from 'vuepress/cli'
 import {viteBundler} from '@vuepress/bundler-vite'
-// 引入 Highlight.js 和样式
+import {gitPlugin} from '@vuepress/plugin-git'
+import {generateSidebarJson} from "../utils/DirUtil.js";
+
 export default defineUserConfig({
     lang: 'zh-CN',
 
@@ -22,7 +24,7 @@ export default defineUserConfig({
                 link: "/knowledge/"
             },
             {
-                text: "笔记模板",
+                text: "个人笔记",
                 link: "/notes/"
             },
             {
@@ -31,62 +33,18 @@ export default defineUserConfig({
             }
         ],
         sidebar: {
-            '/knowledge/': [
-                {
-                    text: '学习资源',
-                    collapsable: false, // 可选，设置是否可折叠
-                    children: [
-                        {
-                            text: '基础知识',
-                            children: [
-                                '/knowledge/basic/STL容器.md',
-                                '/knowledge/basic/前缀和.md',
-                            ]
-                        },
-                        {
-                            text: '字符串',
-                            children: [
-                                '/knowledge/string/string.md',
-                                '/knowledge/string/kmp.md',
-                            ]
-                        },
-                        {
-                            text: '数学',
-                            children: [
-                                '/knowledge/math/排列组合.md'
-                            ]
-                        },
-                    ]
-                }
-            ],
-            '/notes': [
-                {
-                    text: "个人笔记",
-                    collapsable: true,
-                    children: [
-                        {
-                            text: "麦文鹏",
-                            collapsable: true,
-                            children: [
-                                '/notes/麦文鹏/前言.md',
-                                '/notes/麦文鹏/工具.md',
-                                '/notes/麦文鹏/玄学算法.md',
-                                '/notes/麦文鹏/基础算法.md',
-                                '/notes/麦文鹏/高级数据结构.md',
-                                '/notes/麦文鹏/动态规划.md',
-                            ]
-                        },
-                        {
-                            text: "张三",
-                            collapsable: false,
-                            children: [
-                                '/notes/张三/index.md',
-                            ]
-                        }
-                    ]
-                }
-            ]
+            '/knowledge/': generateSidebarJson("docs/knowledge"),
+            '/notes/': generateSidebarJson("docs/notes/")
         }
     }),
+
     bundler: viteBundler(),
+    plugins: [
+        gitPlugin({
+            createdTime: true,
+            updatedTime: true,
+            contributors: true
+        }),
+
+    ],
 })

@@ -1,5 +1,5 @@
 import comp from "C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/docs/.vuepress/.temp/pages/notes/index.html.vue"
-const data = JSON.parse("{\"path\":\"/notes/\",\"title\":\"个人笔记\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"个人笔记\"},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"notes/index.md\"}")
+const data = JSON.parse("{\"path\":\"/notes/\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"filePathRelative\":\"notes/index.md\",\"git\":{\"createdTime\":1723910784000,\"updatedTime\":1723910784000,\"contributors\":[{\"name\":\"Mai\",\"email\":\"2512834769@qq.com\",\"commits\":1}]}}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

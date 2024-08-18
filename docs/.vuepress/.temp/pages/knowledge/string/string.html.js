@@ -1,5 +1,5 @@
 import comp from "C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/docs/.vuepress/.temp/pages/knowledge/string/string.html.vue"
-const data = JSON.parse("{\"path\":\"/knowledge/string/string.html\",\"title\":\"string\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"string\",\"author\":\"Mai\"},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"knowledge/string/string.md\"}")
+const data = JSON.parse("{\"path\":\"/knowledge/string/string.html\",\"title\":\"string\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"string\",\"author\":\"Mai\"},\"headers\":[],\"filePathRelative\":\"knowledge/string/string.md\",\"git\":{\"createdTime\":1723910784000,\"updatedTime\":1723910784000,\"contributors\":[{\"name\":\"Mai\",\"email\":\"2512834769@qq.com\",\"commits\":1}]}}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
