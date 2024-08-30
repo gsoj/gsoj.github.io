@@ -2,7 +2,7 @@
 <h2 id="背包问题" tabindex="-1"><a class="header-anchor" href="#背包问题"><span>背包问题</span></a></h2>
 <h3 id="_01背包" tabindex="-1"><a class="header-anchor" href="#_01背包"><span>01背包</span></a></h3>
 <p>f[l]由f[l-w]推导，所以得从后往前</p>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">for (int i = 1; i &lt;= n; i++)</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">for (int i = 1; i &lt;= n; i++)</span>
 <span class="line">  for (int l = W; l &gt;= w[i]; l--)</span>
 <span class="line">    f[l] = max(f[l], f[l - w[i]] + v[i]);</span>
 <span class="line"></span></code></pre>
@@ -12,7 +12,7 @@
 <p>所以$dp[i][j]=max(dp[i-1][j],dp[i][j-v]+w)$</p>
 <p>再优化成一维 dp[i]=max(dp[i],dp[i-v]+w);</p>
 <p>dp[i]是最优解的前提是dp[i-v]已是最优解,所以推导应从前往后</p>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
 <span class="line">using namespace std;</span>
 <span class="line">const int N=1010;</span>
 <span class="line">int dp[N][N];</span>
@@ -29,7 +29,7 @@
 <span class="line">}</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="多重背包" tabindex="-1"><a class="header-anchor" href="#多重背包"><span>多重背包</span></a></h3>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
 <span class="line">using namespace std;</span>
 <span class="line">const int N=110;</span>
 <span class="line">int dp[N][N];</span>
@@ -47,7 +47,7 @@
 <span class="line">}</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>二进制优化多重背包</p>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">//w[i]存储拆分后的价值</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">//w[i]存储拆分后的价值</span>
 <span class="line">//v[i]存储拆分后的体积</span>
 <span class="line">int k=0;</span>
 <span class="line">for(int i=0;i&lt;n;i++){</span>
@@ -71,7 +71,7 @@
 <p>依据多重背包的二进制优化思想，把每个物品都根据二进制拆分</p>
 <p>特别的，无限个物品可以设为一个很大的值，比如1e6</p>
 <p>这样每个物品都有有限个数量，之后便是多重背包的做法</p>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">	//依次放入物品</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">	//依次放入物品</span>
 <span class="line">	for(int i=1;i&lt;=k;i++){</span>
 <span class="line">        for(int j=maxV;j&gt;=V[i];j--){</span>
 <span class="line">            dp[j]=max(dp[j],dp[j-V[i]]+W[i]);</span>
@@ -79,7 +79,7 @@
 <span class="line">    }</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>完整代码</p>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
 <span class="line">using namespace std;</span>
 <span class="line">typedef long long ll;</span>
 <span class="line">const int Maxn=1e6+10;</span>
@@ -120,7 +120,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="二维背包dp" tabindex="-1"><a class="header-anchor" href="#二维背包dp"><span>二维背包dp</span></a></h3>
 <p>有n个任务需要完成，完成第i个任务需要花费ti分钟，产生ci元的开支。</p>
 <p>现在有T分钟时间,W元钱来处理这些任务，求最多能完成多少任务。</p>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
 <span class="line">using namespace std;</span>
 <span class="line">typedef long long ll;</span>
 <span class="line">const int Maxn=1e5+10;</span>
@@ -142,7 +142,7 @@
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="分组背包" tabindex="-1"><a class="header-anchor" href="#分组背包"><span>分组背包</span></a></h3>
 <p>每一组只能选一个，求最大价值即可</p>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
 <span class="line">using namespace std;</span>
 <span class="line">typedef long long ll;</span>
 <span class="line">typedef pair&lt;int,int&gt; PII;</span>
@@ -174,7 +174,7 @@
 <p>01背包升级版，如果物品a的附加品是b,c</p>
 <p>那么需要考虑的拿法就是：</p>
 <p>1、什么都不拿 2、只拿a 3、拿ab 4、拿ac 5、拿abc</p>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
 <span class="line">using namespace std;</span>
 <span class="line">typedef long long ll;</span>
 <span class="line">const int Maxn=1e5+10;</span>
@@ -225,7 +225,7 @@
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="环形dp" tabindex="-1"><a class="header-anchor" href="#环形dp"><span>环形DP</span></a></h2>
 <p>NOIP2006-S-1-能量项链</p>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
 <span class="line"></span>
 <span class="line">#define int long long</span>
 <span class="line">#define ios ios::sync_with_stdio(false),cin.tie(nullptr),cout.tie(nullptr)</span>
@@ -267,7 +267,7 @@
 <span class="line">}</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="树型dp" tabindex="-1"><a class="header-anchor" href="#树型dp"><span>树型dp</span></a></h2>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
 <span class="line">using namespace std;</span>
 <span class="line">const int Maxn=6010;</span>
 <span class="line">int fat[Maxn];</span>
@@ -313,13 +313,13 @@
 <span class="line">}</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="数位dp" tabindex="-1"><a class="header-anchor" href="#数位dp"><span>数位DP</span></a></h2>
-<h3 id="至少有-1-位重复的数字" tabindex="-1"><a class="header-anchor" href="#至少有-1-位重复的数字"><span><a href="https://leetcode.cn/problems/numbers-with-repeated-digits/description/" target="_blank" rel="noopener noreferrer">至少有 1 位重复的数字</a></span></a></h3>
+<h3 id="至少有-1-位重复的数字" tabindex="-1"><a class="header-anchor" href="#至少有-1-位重复的数字"><span><a href="https://leetcode.cn/problems/numbers-with-repeated-digits/description/" target="_blank" rel="noopener noreferrer">至少有 1 位重复的数字<ExternalLinkIcon/></a></span></a></h3>
 <p><code v-pre>dp[i][j]</code>记录前i位在没有限制的情况下的有效数量。</p>
 <p>有限制与无限制的区别在于，同j的情况下，<strong>无限制的(i,j)所能得到的情况多于有限制的(i,j)</strong>,所以有限制时不能记忆化</p>
 <p>f(i,used,isLimit,isNum)代表前i位中使用的数字集合为used</p>
 <p>isLimit代表是否存在限制，用于限制数字的枚举的上限</p>
 <p>isNum代表前面是否有填过数字</p>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">class Solution {</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">class Solution {</span>
 <span class="line">public:</span>
 <span class="line">    int numDupDigitsAtMostN(int n) {</span>
 <span class="line">        string s=to_string(n);</span>
@@ -353,7 +353,7 @@
 <span class="line">};</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>python中使用@cache装饰器可以替代记忆化数组</p>
-<div class="language-python line-numbers-mode" data-highlighter="prismjs" data-ext="py" data-title="py"><pre v-pre><code><span class="line"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span></span>
+<div class="language-python line-numbers-mode" data-highlighter="prismjs" data-ext="py" data-title="py"><pre v-pre class="language-python"><code><span class="line"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span></span>
 <span class="line">    <span class="token keyword">def</span> <span class="token function">numberOfBeautifulIntegers</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> low<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> high<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> k<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">int</span><span class="token punctuation">:</span></span>
 <span class="line">        <span class="token keyword">def</span> <span class="token function">dp</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span></span>
 <span class="line">            s<span class="token operator">=</span><span class="token builtin">str</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span></span>

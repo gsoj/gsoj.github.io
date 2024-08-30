@@ -1,6 +1,6 @@
 <template><div><h1 id="工具" tabindex="-1"><a class="header-anchor" href="#工具"><span>工具</span></a></h1>
 <h2 id="临时评测机" tabindex="-1"><a class="header-anchor" href="#临时评测机"><span>临时评测机</span></a></h2>
-<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">#include &lt;bits/stdc++.h&gt;</span>
+<div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">#include &lt;bits/stdc++.h&gt;</span>
 <span class="line">using namespace std;</span>
 <span class="line"></span>
 <span class="line">int main() {</span>

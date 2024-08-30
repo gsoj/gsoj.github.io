@@ -1,6 +1,9 @@
 export const redirects = JSON.parse("{\"/aboutUs.html\":\"/article/yx7dzzm5/\",\"/get-started.html\":\"/article/fj900mle/\",\"/goj.html\":\"/article/pecxq1b0/\"}")
 
 export const routes = Object.fromEntries([
+  ["/timeline.html", { loader: () => import(/* webpackChunkName: "timeline.html" */"C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/docs/.vuepress/.temp/pages/timeline.html.js"), meta: {"title":""} }],
+  ["/posts.html", { loader: () => import(/* webpackChunkName: "posts.html" */"C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/docs/.vuepress/.temp/pages/posts.html.js"), meta: {"title":""} }],
+  ["/friendship-link.html", { loader: () => import(/* webpackChunkName: "friendship-link.html" */"C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/docs/.vuepress/.temp/pages/friendship-link.html.js"), meta: {"title":""} }],
   ["/article/yx7dzzm5/", { loader: () => import(/* webpackChunkName: "article_yx7dzzm5_index.html" */"C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/docs/.vuepress/.temp/pages/article/yx7dzzm5/index.html.js"), meta: {"title":"我们"} }],
   ["/article/fj900mle/", { loader: () => import(/* webpackChunkName: "article_fj900mle_index.html" */"C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/docs/.vuepress/.temp/pages/article/fj900mle/index.html.js"), meta: {"title":"get-started"} }],
   ["/article/pecxq1b0/", { loader: () => import(/* webpackChunkName: "article_pecxq1b0_index.html" */"C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/docs/.vuepress/.temp/pages/article/pecxq1b0/index.html.js"), meta: {"title":"goj"} }],

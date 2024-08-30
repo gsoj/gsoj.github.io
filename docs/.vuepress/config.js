@@ -3,6 +3,7 @@ import {defineUserConfig} from 'vuepress/cli'
 import {viteBundler} from '@vuepress/bundler-vite'
 import {gitPlugin} from '@vuepress/plugin-git'
 import {generateSidebarJson} from "../utils/DirUtil.js";
+import {recoTheme} from 'vuepress-theme-reco'
 
 export default defineUserConfig({
     lang: 'zh-CN',
@@ -12,7 +13,7 @@ export default defineUserConfig({
     editLinks: true,
     editLinkText: '编辑此页',
     lastUpdated: '上次更新',
-    theme: defaultTheme({
+    theme: recoTheme({
         logo: 'https://vuejs.press/images/hero.png',
         navbar: [
             {
@@ -45,6 +46,5 @@ export default defineUserConfig({
             updatedTime: true,
             contributors: true
         }),
-
     ],
 })

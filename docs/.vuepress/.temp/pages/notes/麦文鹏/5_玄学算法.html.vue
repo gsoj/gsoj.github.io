@@ -4,11 +4,11 @@
 <p><strong>接受概率</strong></p>
 <p><img src="/assets/jsgl.png" alt="jsgl"></p>
 <p><strong>如何产生新解</strong></p>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre v-pre><code><span class="line">坐标系内：随机生成一个点，或者生成一个向量。</span>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre v-pre class="language-text"><code><span class="line">坐标系内：随机生成一个点，或者生成一个向量。</span>
 <span class="line">序列问题： random_shuffle 或者随机交换两个数。</span>
 <span class="line">网格问题：可以看做二维序列，每次交换两个格子即可。</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-c++ line-numbers-mode" data-highlighter="prismjs" data-ext="c++" data-title="c++"><pre v-pre class="language-c++"><code><span class="line">#include&lt;bits/stdc++.h&gt;</span>
 <span class="line">//https://codeforces.com/gym/101981 D题</span>
 <span class="line">using namespace std;</span>
 <span class="line">#define int long long</span>
