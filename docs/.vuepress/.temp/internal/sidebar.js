@@ -1,4 +1,4 @@
-export const sidebar = {"/":{"/knowledge/":[{"text":"指南","collapsible":true,"children":["/knowledge/basic","/knowledge/string","/knowledge/math"]}]},"__auto__":{}}
+export const sidebar = {"/":{},"__auto__":{}}
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

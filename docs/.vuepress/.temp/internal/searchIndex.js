@@ -93,13 +93,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Home",
-    "headers": [],
-    "path": "/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "导读",
     "headers": [
       {
@@ -131,56 +124,56 @@ export const searchIndex = [
   {
     "title": "STL容器",
     "headers": [],
-    "path": "/knowledge/1_jichusuanfa/STLrongqi.html",
+    "path": "/knowledge/1_%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/STL%E5%AE%B9%E5%99%A8.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "前缀和",
     "headers": [],
-    "path": "/knowledge/1_jichusuanfa/qianzhuihe.html",
+    "path": "/knowledge/1_%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/%E5%89%8D%E7%BC%80%E5%92%8C.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "KMP算法",
     "headers": [],
-    "path": "/knowledge/2_zifuchuan/kmp.html",
+    "path": "/knowledge/2_%E5%AD%97%E7%AC%A6%E4%B8%B2/kmp.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "string",
     "headers": [],
-    "path": "/knowledge/2_zifuchuan/string.html",
+    "path": "/knowledge/2_%E5%AD%97%E7%AC%A6%E4%B8%B2/string.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "排列组合",
     "headers": [],
-    "path": "/knowledge/3_shuxue/pailiezuhe.html",
+    "path": "/knowledge/3_%E6%95%B0%E5%AD%A6/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "自动配置侧边栏",
     "headers": [],
-    "path": "/notes/zhangsan/Demo2.html",
+    "path": "/notes/%E5%BC%A0%E4%B8%89/Demo2.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "Demo",
     "headers": [],
-    "path": "/notes/zhangsan/",
+    "path": "/notes/%E5%BC%A0%E4%B8%89/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "前言",
     "headers": [],
-    "path": "/notes/maiwenpeng/1_qianyan.html",
+    "path": "/notes/%E9%BA%A6%E6%96%87%E9%B9%8F/1_%E5%89%8D%E8%A8%80.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -195,7 +188,7 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/notes/maiwenpeng/2_gongju.html",
+    "path": "/notes/%E9%BA%A6%E6%96%87%E9%B9%8F/2_%E5%B7%A5%E5%85%B7.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -447,7 +440,7 @@ export const searchIndex = [
         ]
       }
     ],
-    "path": "/notes/maiwenpeng/3_jichusuanfa.html",
+    "path": "/notes/%E9%BA%A6%E6%96%87%E9%B9%8F/3_%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -594,7 +587,7 @@ export const searchIndex = [
         ]
       }
     ],
-    "path": "/notes/maiwenpeng/4_gaojishujujiegou.html",
+    "path": "/notes/%E9%BA%A6%E6%96%87%E9%B9%8F/4_%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -688,7 +681,7 @@ export const searchIndex = [
         ]
       }
     ],
-    "path": "/notes/maiwenpeng/5_dongtaiguihua.html",
+    "path": "/notes/%E9%BA%A6%E6%96%87%E9%B9%8F/5_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -703,7 +696,7 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/notes/maiwenpeng/5_xuanxuesuanfa.html",
+    "path": "/notes/%E9%BA%A6%E6%96%87%E9%B9%8F/5_%E7%8E%84%E5%AD%A6%E7%AE%97%E6%B3%95.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -713,5 +706,32 @@ export const searchIndex = [
     "path": "/404.html",
     "pathLocale": "/",
     "extraFields": []
+  },
+  {
+    "title": "Home",
+    "headers": [],
+    "path": "/index_temp.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/",
+    "pathLocale": "/",
+    "extraFields": []
   }
 ]
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ searchIndex }) => {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  })
+}

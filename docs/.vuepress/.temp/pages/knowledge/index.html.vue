@@ -1,6 +1,9 @@
-<template><div><div class="custom-container tip"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8h.01"></path><path d="M11 12h1v4h1"></path></g></svg><p class="custom-container-title">开篇词</p><p>持之以恒，有志者事竟成；</p>
+<template><div><div class="hint-container tip">
+<p class="hint-container-title">开篇词</p>
+<p>持之以恒，有志者事竟成；</p>
 <p>天道酬勤，苦心人天不负；</p>
-</div><p>在你开始刷题，走上程序设计竞赛之路之前，一定要好好想想，再问问自己几个问题：</p>
+</div>
+<p>在你开始刷题，走上程序设计竞赛之路之前，一定要好好想想，再问问自己几个问题：</p>
 <ul>
 <li>我要不要做这件事情？</li>
 <li>为什么做这件事情？</li>

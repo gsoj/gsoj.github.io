@@ -34,7 +34,6 @@ import {
   watch,
   watchEffect
 } from "./chunk-PAUCAATC.js";
-import "./chunk-UVKRO5ER.js";
 
 // node_modules/@vueuse/shared/node_modules/vue-demi/lib/index.mjs
 var isVue2 = false;

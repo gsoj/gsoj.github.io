@@ -1,88 +1,64 @@
 {
-  "hash": "34002386",
-  "configHash": "5bcc1bb5",
+  "hash": "a6c9f8fe",
+  "configHash": "0f1e123a",
   "lockfileHash": "5d3a334f",
-  "browserHash": "a1b253a5",
+  "browserHash": "af87db4e",
   "optimized": {
+    "mark.js/src/vanilla.js": {
+      "src": "../../../../node_modules/mark.js/src/vanilla.js",
+      "file": "mark__js_src_vanilla__js.js",
+      "fileHash": "1bb8b809",
+      "needsInterop": false
+    },
+    "@vueuse/integrations/useFocusTrap": {
+      "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
+      "file": "@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "b844cd1b",
+      "needsInterop": false
+    },
+    "minisearch": {
+      "src": "../../../../node_modules/minisearch/dist/es/index.js",
+      "file": "minisearch.js",
+      "fileHash": "638cdedc",
+      "needsInterop": false
+    },
     "@vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "@vueuse_core.js",
-      "fileHash": "07e74812",
+      "fileHash": "6763a10e",
       "needsInterop": false
     },
     "@vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "@vue_devtools-api.js",
-      "fileHash": "3822752e",
+      "fileHash": "f4f0ecbd",
       "needsInterop": false
     },
     "@vuepress/shared": {
       "src": "../../../../node_modules/@vuepress/shared/dist/index.js",
       "file": "@vuepress_shared.js",
-      "fileHash": "24c45c63",
+      "fileHash": "4564e9e6",
       "needsInterop": false
     },
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "5cd9f3b5",
+      "fileHash": "2b2bb18f",
       "needsInterop": false
     },
     "vue-router": {
       "src": "../../../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
       "file": "vue-router.js",
-      "fileHash": "74d25e50",
-      "needsInterop": false
-    },
-    "@composables/index.js": {
-      "src": "../../../../node_modules/vuepress-theme-reco/lib/client/composables/index.js",
-      "file": "@composables_index__js.js",
-      "fileHash": "d3437848",
-      "needsInterop": false
-    },
-    "@utils/resolveStyles.js": {
-      "src": "../../../../node_modules/vuepress-theme-reco/lib/client/utils/resolveStyles.js",
-      "file": "@utils_resolveStyles__js.js",
-      "fileHash": "334bc484",
-      "needsInterop": false
-    },
-    "@utils/index.js": {
-      "src": "../../../../node_modules/vuepress-theme-reco/lib/client/utils/index.js",
-      "file": "@utils_index__js.js",
-      "fileHash": "fcdbe0b6",
-      "needsInterop": false
-    },
-    "@utils/other.js": {
-      "src": "../../../../node_modules/vuepress-theme-reco/lib/client/utils/other.js",
-      "file": "@utils_other__js.js",
-      "fileHash": "397bfa7a",
-      "needsInterop": false
-    },
-    "@utils/other": {
-      "src": "../../../../node_modules/vuepress-theme-reco/lib/client/utils/other.js",
-      "file": "@utils_other.js",
-      "fileHash": "b80bf83f",
+      "fileHash": "0f34e520",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-LIVHGMSS": {
-      "file": "chunk-LIVHGMSS.js"
-    },
-    "chunk-MFXJQUVH": {
-      "file": "chunk-MFXJQUVH.js"
-    },
     "chunk-UKCZNIRO": {
       "file": "chunk-UKCZNIRO.js"
     },
-    "chunk-IGL3VGCY": {
-      "file": "chunk-IGL3VGCY.js"
-    },
     "chunk-PAUCAATC": {
       "file": "chunk-PAUCAATC.js"
-    },
-    "chunk-UVKRO5ER": {
-      "file": "chunk-UVKRO5ER.js"
     }
   }
 }

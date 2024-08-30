@@ -1,6 +1,6 @@
 
-import { useCopyCode } from 'C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/node_modules/@vuepress-plume/plugin-shikiji/lib/client/composables/copy-code.js'
-import { useCollapsedLines } from 'C:/Users/Mai/Desktop/GOJ-HOME/vuepress-starter/node_modules/@vuepress-plume/plugin-shikiji/lib/client/composables/collapsed-lines.js'
+import { useCopyCode } from 'C:/Users/Mai/Desktop/GOJ/gsoj.github.io/node_modules/vuepress-theme-plume/node_modules/@vuepress-plume/plugin-shikiji/lib/client/composables/copy-code.js'
+import { useCollapsedLines } from 'C:/Users/Mai/Desktop/GOJ/gsoj.github.io/node_modules/vuepress-theme-plume/node_modules/@vuepress-plume/plugin-shikiji/lib/client/composables/collapsed-lines.js'
 
 export default {
   
