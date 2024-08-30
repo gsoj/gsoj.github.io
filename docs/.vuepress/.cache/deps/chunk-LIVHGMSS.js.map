@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/vuepress-theme-reco/lib/client/utils/other.js"],
+  "sourcesContent": ["export function formatISODate(ISODate = '') {\n    const dateStr = ISODate.replace('T', ' ').replace('Z', '').split('.')[0];\n    const formatDateStr = dateStr.replace(/(\\s00:00:00)$/, '');\n    return formatDateStr;\n}\n"],
+  "mappings": ";AAAO,SAAS,cAAc,UAAU,IAAI;AACxC,QAAM,UAAU,QAAQ,QAAQ,KAAK,GAAG,EAAE,QAAQ,KAAK,EAAE,EAAE,MAAM,GAAG,EAAE,CAAC;AACvE,QAAM,gBAAgB,QAAQ,QAAQ,iBAAiB,EAAE;AACzD,SAAO;AACX;",
+  "names": []
+}
