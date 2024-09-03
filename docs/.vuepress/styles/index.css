@@ -1,0 +1,4 @@
+/* 默认设置，可以在 `index.css` 中覆盖 */
+:root {
+    --vp-c-text-hero-tagline: #fdfdfd;
+}

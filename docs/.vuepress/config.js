@@ -1,8 +1,6 @@
-import {defaultTheme} from '@vuepress/theme-default'
 import {defineUserConfig} from 'vuepress/cli'
 import {viteBundler} from '@vuepress/bundler-vite'
 import {gitPlugin} from '@vuepress/plugin-git'
-import {theme} from "./plumeTheme.js";
 import {plumeTheme} from 'vuepress-theme-plume'
 
 export default defineUserConfig({

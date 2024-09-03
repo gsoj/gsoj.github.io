@@ -1,59 +1,62 @@
 {
-  "hash": "a6c9f8fe",
-  "configHash": "0f1e123a",
-  "lockfileHash": "5d3a334f",
-  "browserHash": "af87db4e",
+  "hash": "abbaf050",
+  "configHash": "c8ac2864",
+  "lockfileHash": "471d2737",
+  "browserHash": "344217e5",
   "optimized": {
     "mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "mark__js_src_vanilla__js.js",
-      "fileHash": "1bb8b809",
+      "fileHash": "b244d6f4",
       "needsInterop": false
     },
     "@vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "b844cd1b",
+      "fileHash": "5b68c4f9",
       "needsInterop": false
     },
     "minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "minisearch.js",
-      "fileHash": "638cdedc",
+      "fileHash": "b616af95",
       "needsInterop": false
     },
     "@vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "@vueuse_core.js",
-      "fileHash": "6763a10e",
+      "fileHash": "36ae82e0",
       "needsInterop": false
     },
     "@vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "@vue_devtools-api.js",
-      "fileHash": "f4f0ecbd",
+      "fileHash": "050071b7",
       "needsInterop": false
     },
     "@vuepress/shared": {
       "src": "../../../../node_modules/@vuepress/shared/dist/index.js",
       "file": "@vuepress_shared.js",
-      "fileHash": "4564e9e6",
+      "fileHash": "f672eba9",
       "needsInterop": false
     },
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "2b2bb18f",
+      "fileHash": "c13261d6",
       "needsInterop": false
     },
     "vue-router": {
       "src": "../../../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
       "file": "vue-router.js",
-      "fileHash": "0f34e520",
+      "fileHash": "0aecf9fe",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-EFJTDLBY": {
+      "file": "chunk-EFJTDLBY.js"
+    },
     "chunk-UKCZNIRO": {
       "file": "chunk-UKCZNIRO.js"
     },
