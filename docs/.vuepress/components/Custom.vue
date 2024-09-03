@@ -12,6 +12,6 @@
 .home-box {
   width: 100vw;
   height: 50vh;
-  background: image("/日常训练3.jpg");
+  background: image("/docs/notes/honor/img/daily/日常训练3.jpg");
 }
 </style>

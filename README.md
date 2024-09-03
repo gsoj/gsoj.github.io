@@ -1,27 +1,75 @@
-# ZGUC ACM
+# 使用规范
 
-## 我们是什么
-
-此仓库为ZGUC 程序设计集训队资源存放仓库
-
-
-
-## 我能做什么
-
-加入本仓库后，可以将自己的笔记上传到此仓库
-
-具体步骤为
-
-1、安装并配置git，注册git账户，自行百度
-
-2、克隆本仓库到本地
+1、常规的git操作
 
 ```bash
-https://github.com/Mai-c1/mai-c1.github.io.git
+git pull
+git add
+git commit
+git push
 ```
 
-3、在docs/notes文件夹下创建属于自己的md文档,以名字拼音为文件名
+2、部署
 
-<img src="assets/image-20240817161407647.png" alt="image-20240817161407647" style="float:left"/>
+```bash
+sh .\deploy.sh
+```
 
-4、
+
+
+在编写文档时，为了有效管理，请按此结构放置md文件
+
+<img src="assets/image-20240903220825425.png" alt="image-20240903220825425" style="float:left"/>
+
+在.vuepress/config.ts中，找到这段配置
+
+```ts
+        notes: {
+            dir: "notes",
+            link: "/",
+            notes: [
+                {
+                    dir: "honor",
+                    link: "/honor/",
+                    sidebar: [
+                        {
+                            text: "比赛风采",
+                            items: ['2023-ICPC-hangzhou']
+                        },
+                        {
+                            text: "日常训练",
+                            items: ['daily']
+                        }
+                    ]
+                },
+            ]
+        }
+```
+
+例如我新建了一个md文件，2023-ZJCPC.md，在比赛风采下面展示
+
+```ts
+        notes: {
+            dir: "notes",
+            link: "/",
+            notes: [
+                {
+                    dir: "honor",
+                    link: "/honor/",
+                    sidebar: [
+                        {
+                            text: "比赛风采",
+                            items: ['2023-ICPC-hangzhou','2023-ZJCPC']
+                        },
+                        {
+                            text: "日常训练",
+                            items: ['daily']
+                        }
+                    ]
+                },
+            ]
+        }
+```
+
+
+
