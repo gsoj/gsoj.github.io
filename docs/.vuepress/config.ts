@@ -26,8 +26,12 @@ export default defineUserConfig({
                     link: "/honor/",
                     sidebar: [
                         {
+                            text: "团队成员",
+                            items: ['members']
+                        },
+                        {
                             text: "比赛风采",
-                            items: ['2023-ICPC-hangzhou','2023-ZJCPC']
+                            items: ['2023-ICPC-hangzhou','2024-ZJCPC']
                         },
                         {
                             text: "日常训练",

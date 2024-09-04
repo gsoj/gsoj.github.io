@@ -17,6 +17,7 @@
     "vuepress-theme-plume": "^1.0.0-rc.91"
   },
   "dependencies": {
+    "@vuepress/shared-utils": "^1.9.10",
     "highlight.js": "^11.10.0"
   }
 }
