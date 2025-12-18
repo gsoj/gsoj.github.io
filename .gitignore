@@ -1,1 +1,8 @@
 node_modules/
+# VuePress generated files
+docs/.vuepress/.temp/
+docs/.vuepress/.cache/
+docs/.vuepress/dist/
+# IDE files
+.idea/
+.vscode/
